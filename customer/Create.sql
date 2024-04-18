@@ -1,3 +1,7 @@
+DROP TABLE Orders;
+DROP TABLE Customers;
+
+
 CREATE TABLE Customers (
     CustomerID INTEGER PRIMARY KEY,
     CustomerName TEXT NOT NULL,

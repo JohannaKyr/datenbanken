@@ -1,3 +1,3 @@
-SELECT*FROM Orders;
-SELECT*FROM Customers
+SELECT* FROM Orders;
+SELECT*FROM Customers;
 
