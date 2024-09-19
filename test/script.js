@@ -78,6 +78,8 @@ function generateMathCaptcha() {
         if (userAnswer === correctAnswer) {
             document.getElementById('mathError').style.display = 'none'; // Fehlernachricht ausblenden
             document.getElementById('status').innerText = 'Antwort korrekt! Zugang gewährt!'; // Erfolgsmeldung
+            // Open a new page with the welcome message
+            window.open("welcome.html", "_blank"); // Neue Seite in einem neuen Tab/Fenster öffnen
         } else {
             document.getElementById('mathError').style.display = 'block'; // Fehlernachricht anzeigen
             document.getElementById('status').innerText = ''; // Status zurücksetzen
