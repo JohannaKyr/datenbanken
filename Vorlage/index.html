@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webinar Anmeldung – KI im Büroalltag</title>
+    <style>
+      
+    </style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Kohlruss, Gertrud</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">22200.0000000000</mso:Order>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:SharedWithUsers msdt:dt="string"></mso:SharedWithUsers>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Kohlruss, Gertrud</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:ContentTypeId msdt:dt="string">0x01010086EA09931D28104F9D4D5F9F87CC1ED1</mso:ContentTypeId>
+<mso:TriggerFlowInfo msdt:dt="string"></mso:TriggerFlowInfo>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+
+<div class="container">
+    <h2>Webinar Anmeldung – KI im Büroalltag</h2>
+    <form id="webinarForm">
+        <div class="form-group">
+            <label for="firstName">Vorname</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <div id="firstNameError" class="error"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Nachname</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <div id="lastNameError" class="error"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="birthDate">Geburtsdatum</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+            <div id="ageError" class="error"></div>
+        </div>
+
+        <!-- CAPTCHA Section, initially hidden -->
+        <div class="math-captcha">
+            <div class="form-group">
+                <label id="mathQuestion">Lösen Sie die folgende Mathe-Aufgabe:</label>
+                <input type="text" id="mathAnswer" required>
+                <div id="mathError" class="error"></div>
+            </div>
+            <button type="submit" id="captchaSubmit">Captcha lösen</button>
+            <div id="status"></div>
+        </div>
+            <button type="button" id="initialSubmit">Anmelden</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
